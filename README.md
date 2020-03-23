@@ -1,1 +1,1 @@
-# CS6490 Network Security Final Project - Botnet Detection
+# CS6490 Network Security Final Project - Node Embeddings for Botnet Detection
