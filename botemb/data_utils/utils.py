@@ -32,22 +32,22 @@ def download(scenario=None):
         raise ValueError('Invalid value passed to scenario')
 
     scenario_map = {
-        '1': '42',
-        '2': '43',
-        '3': '44',
-        '4': '45',
-        '5': '46',
-        '6': '47',
-        '7': '48',
-        '8': '49',
-        '9': '50',
-        '10': '51',
-        '11': '52',
-        '12': '53',
-        '13': '54'
+        '1': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-42/detailed-bidirectional-flow-labels/capture20110810.binetflow',
+        '2': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-43/detailed-bidirectional-flow-labels/capture20110811.binetflow',
+        '3': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-44/detailed-bidirectional-flow-labels/capture20110812.binetflow',
+        '4': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-45/detailed-bidirectional-flow-labels/capture20110815.binetflow',
+        '5': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-46/detailed-bidirectional-flow-labels/capture20110815-2.binetflow',
+        '6': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-47/detailed-bidirectional-flow-labels/capture20110816.binetflow',
+        '7': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-48/detailed-bidirectional-flow-labels/capture20110816-2.binetflow',
+        '8': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-49/detailed-bidirectional-flow-labels/capture20110816-3.binetflow',
+        '9': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-50/detailed-bidirectional-flow-labels/capture20110817.binetflow',
+        '10': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-51/detailed-bidirectional-flow-labels/capture20110818.binetflow',
+        '11': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-52/detailed-bidirectional-flow-labels/capture20110818-2.binetflow',
+        '12': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-53/detailed-bidirectional-flow-labels/capture20110819.binetflow',
+        '13': r'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-54/detailed-bidirectional-flow-labels/capture20110815-3.binetflow'
     }
 
-    url = f'https://mcfp.felk.cvut.cz/publicDatasets/CTU-Malware-Capture-Botnet-{scenario_map[str(scenario)]}/detailed-bidirectional-flow-labels/capture20110810.binetflow'
+    url = scenario_map[str(scenario)]
     print(f'Downloading scenario={scenario} from: {url}')
     return pd.read_csv(url)
 
