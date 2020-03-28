@@ -162,5 +162,8 @@ DerivedData/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+# csv files
+*.csv
+
 # End of https://www.gitignore.io/api/vim,xcode,linux,macos,windows,microsoftoffice,visualstudiocode
 
