@@ -165,5 +165,16 @@ DerivedData/
 # csv files
 *.csv
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
 # End of https://www.gitignore.io/api/vim,xcode,linux,macos,windows,microsoftoffice,visualstudiocode
 
