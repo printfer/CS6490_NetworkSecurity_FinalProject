@@ -10,3 +10,5 @@ Node2Vev: https://arxiv.org/pdf/1607.00653.pdf (https://github.com/aditya-grover
 
 CTU datasets: https://www.stratosphereips.org/datasets-ctu13 </br>
 Internet of Things: https://www.stratosphereips.org/datasets-iot23
+## refer:
+* <https://mcfp.weebly.com/the-ctu-13-dataset-a-labeled-dataset-with-botnet-normal-and-background-traffic.html>
