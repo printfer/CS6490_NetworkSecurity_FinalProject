@@ -1,1 +1,9 @@
 opt/
+orig_resp.txt
+orig_resp_no_dot.txt
+botnet_name_list.txt
+other_name_list.txt
+test/botnet_name_list.txt
+test/orig_resp_no_dot.txt
+test/other_name_list.txt
+test/result.csv

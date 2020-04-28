@@ -3,7 +3,8 @@
 def load_data():
     data_set = []
     data_line_set = {}
-    f = open("opt/Malware-Project/BigDataset/IoTScenarios/CTU-IoT-Malware-Capture-1-1/bro/conn.log.labeled", "r")
+    # f = open("opt/Malware-Project/BigDataset/IoTScenarios/CTU-IoT-Malware-Capture-1-1/bro/conn.log.labeled", "r")
+    f = open("opt/Malware-Project/BigDataset/IoTScenarios/CTU-IoT-Malware-Capture-17-1/bro/conn.log.labeled", "r")
     #separator \x09
     #set_separator	,
     #empty_field	(empty)
@@ -15,8 +16,13 @@ def load_data():
 
     #	tunnel_parents   label   detailed-label
     #	set[string]   string   string
+    line_count = 0
     for line in f:
         if (line[0] != "#"):
+            # print(line_count)
+            if(line_count == 9000000):
+                break
+            line_count = line_count + 1
             line_split = line.split()
 
             fields_Types = line_split[0].split(".")[0]

@@ -31,7 +31,8 @@ for data in data_set:
     orig_resp_write_str = orig_addr + " " + resp_addr + "\n"
     f.write(orig_resp_write_str)
 
-    orig_resp_write_no_dot_str = orig_addr.replace('.', '') + " " + resp_addr.replace('.', '') + "\n"
+    # orig_resp_write_no_dot_str = orig_addr.replace('.', '') + " " + resp_addr.replace('.', '') + "\n"
+    orig_resp_write_no_dot_str = orig_addr.replace('.', '_') + " " + resp_addr.replace('.', '_') + "\n"
     f2.write(orig_resp_write_no_dot_str)
 
 # orign addr analysis
